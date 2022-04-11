@@ -1,7 +1,3 @@
-.mantencion{
-    text-align: center
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -15,7 +11,8 @@
 }
 
 body{
-    display: flex;
+    border-top-width: 4px;
+    padding-top: 40px;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -24,7 +21,7 @@ body{
 
 .navigation{
     position: relative;
-    width: 400px;
+    width: 1535px;
     height: 70px;
     background: #fff;
     display: flex;
@@ -140,4 +137,14 @@ body{
 
 .navigation ul li:nth-child(5).active ~ .indicator{
     transform: translateX(calc(70px * 4));
+}
+
+
+.mantencion{
+    background-color: #fafafa;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    /* IMPORTANTE */
+    text-align: center;
 }
