@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+    <title>Registrate 2</title>
+</head>
+<body>
+
+    <!--Inicio de registrar section-->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading">Registrate</h1>
+     
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+           <!-- <?php 
+              if(isset($message)){
+                 foreach($message as $message){
+                    echo '<p class="message">'.$message.'</p>';
+                 }
+              }
+           ?> -->
+           <span>Nombre:</span>
+           <input type="text" name="name" placeholder="Ingrese su nombre" class="box" required>
+           <span>Email:</span>
+           <input type="email" name="email" placeholder="Ingrese su email" class="box" required>
+           <span>Contraseña:</span>
+           <input type="password" name="password" placeholder="Ingrese su contraseña" class="box" required>
+           
+           <input type="submit" value="registrar" name="submit" class="link-btn">
+           <a href="index.html" class="link-btn">Volver</a>
+        </form>  
+     
+    </section>
+    
+    <!--Fin de registrar section-->
+    
+</body>
+</html>
